@@ -6,6 +6,23 @@ $bg-pink: #FD6887;
 $bg-red: #D84448;
 $bg-orange: #D84448;
 $bg-green: #26D41D;
+$colorsScroll: (
+    'text-muted': #6c757d,
+    'text-primary': #007bff,
+);
+$spacing: (
+  'xs': 0.25rem,
+  'sm': 0.5rem,
+  'md': 1rem,
+  'lg': 1.5rem,
+  'xl': 2rem
+);
+
+$transitions: (
+    'duration' : 0.3s,
+    'timing' : ease
+);
+
 
 $geneeral-margin: 0px;
 $margin-log: 16px 16px;
@@ -16,5 +33,6 @@ $spacer: 4rem;
 .container-logos{
     background-color: $bg-color;
 }
+
 
 
