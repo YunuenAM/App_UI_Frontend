@@ -12,6 +12,12 @@ $colorsScroll: (
     'text-muted': #6c757d,
     'text-primary': #007bff,
 );
+
+
+$geneeral-margin: 0px;
+$margin-log: 16px 16px;
+$spacer: 4rem;
+
 $spacing: (
   'xs': 0.25rem,
   'sm': 0.5rem,
@@ -25,10 +31,13 @@ $transitions: (
     'timing' : ease
 );
 
+$transitions-cards: (
+    'background-color': turquoise,
+  'color': white,
+  'transform': translateY(-2px),
+  'box-shadow': 0 12px 20px rgba(0,0,0,0.15)
+);
 
-$geneeral-margin: 0px;
-$margin-log: 16px 16px;
-$spacer: 4rem;
 
 
 
@@ -50,4 +59,15 @@ $spacer: 4rem;
 
 .link-white {
     color: $bg-white;
+}
+
+
+.hover-award {
+  transition: all 0.3s ease;
+  
+  &:hover {
+    @each $propiedad, $valor in $transitions-cards {
+      #{$propiedad}: $valor;
+    }
+  }
 }
