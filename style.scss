@@ -40,6 +40,14 @@ $spacer: 4rem;
     background-color: $bg-naviblue;
 }
 
+.container-footer {
+    background-color: $bg-naviblue;
+    color:$bg-white;
+}
 .header-light{
     content: $bg-white;
+}
+
+.link-white {
+    color: $bg-white;
 }

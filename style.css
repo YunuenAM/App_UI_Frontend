@@ -6,8 +6,17 @@
   background-color: #161348;
 }
 
+.container-footer {
+  background-color: #161348;
+  color: #ffffff;
+}
+
 .header-light {
   content: #ffffff;
+}
+
+.link-white {
+  color: #ffffff;
 }
 
 /*# sourceMappingURL=style.css.map */
