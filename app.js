@@ -60,4 +60,38 @@ function fixGalleryStructure() {
     });
 }
 
+//Soy la logica del dropdown
 
+// Seleccionar todos los dropdowns
+document.querySelectorAll('.dropdown').forEach((dropdown, index) => {
+    const button = dropdown.querySelector('button');
+    const respuesta = dropdown.querySelector('[id="respuesta"]'); // Selecciona por el ID aunque se repita
+    const icon = dropdown.querySelector('.bi-plus-square, .bi-dash');
+    
+    button.addEventListener('click', function(event) {
+        event.preventDefault();
+        
+        // Verificar si el dropdown actual ya está abierto
+        const isOpen = respuesta.style.display === 'block';
+        
+        // Cerrar todos los dropdowns
+        document.querySelectorAll('.dropdown [id="respuesta"]').forEach(resp => {
+            resp.style.display = 'none';
+        });
+        
+        // Resetear todos los iconos a plus
+        document.querySelectorAll('.dropdown .bi-dash').forEach(icono => {
+            icono.classList.remove('bi-dash');
+            icono.classList.add('bi-plus-square');
+        });
+        
+        // Si el dropdown actual no estaba abierto, abrirlo
+        if (!isOpen) {
+            respuesta.style.display = 'block';
+            if (icon) {
+                icon.classList.remove('bi-plus-square');
+                icon.classList.add('bi-dash');
+            }
+        }
+    });
+});
