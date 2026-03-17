@@ -7,6 +7,7 @@ $bg-red: #D84448;
 $bg-orange: #D84448;
 $bg-green: #26D41D;
 $bg-white: #ffffff;
+$bg-naviblue: #161348;
 $colorsScroll: (
     'text-muted': #6c757d,
     'text-primary': #007bff,
@@ -35,4 +36,10 @@ $spacer: 4rem;
     background-color: $bg-color;
 }
 
+.container-solutions {
+    background-color: $bg-naviblue;
+}
 
+.header-light{
+    content: $bg-white;
+}
